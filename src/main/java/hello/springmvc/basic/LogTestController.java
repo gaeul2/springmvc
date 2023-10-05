@@ -1,10 +1,12 @@
 package hello.springmvc.basic;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RestController // -> return 하는 문자를 진짜 http body에 박아버림
 //@Controller -> view이름 반환
 public class LogTestController {
@@ -18,6 +20,7 @@ public class LogTestController {
 
         System.out.println("name = " + name);
 //        log.trace("trace log ={}, {} ", name, name2); -> 이렇게 쓰면 순서대로 치환이 되는것
+
 
         log.trace(" trace log ={}", name);
         log.debug(" debug log ={}", name);
