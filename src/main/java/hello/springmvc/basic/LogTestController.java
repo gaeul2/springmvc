@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@Controller -> view이름 반환
 public class LogTestController {
     //편한것으로 쓰면됨
-    private final Logger log = LoggerFactory.getLogger(getClass());
+//    private final Logger log = LoggerFactory.getLogger(getClass());
 //    private final Logger log = LoggerFactory.getLogger(LogTestController.class);
 
     @RequestMapping("/log-test")
